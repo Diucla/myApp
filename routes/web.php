@@ -14,3 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/dados', function(){
+	return "Texto";
+});
+
+Route::get('/versao/{versao?}', function($versao = null){
+	return "A versao actual e ".$versao;
+});
+
+Route::get('/produto', function(){
+	return view('produtos.produto');
+});
