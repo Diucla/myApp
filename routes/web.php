@@ -27,3 +27,6 @@ Route::get('/versao/{versao?}', function($versao = null){
 Route::get('/produto', function(){
 	return view('produtos.produto');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
